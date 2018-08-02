@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+package go.micro.srv.usr;
+
+service ItemService {
+    rpc CreateItem(Item) returns (Response) {}
+    rpc GetItems(Item) returns (Response) {}
+}
+
+message Item {
+    string id = 1;
+    string name = 2;
+    string owner = 3;
+    string category = 4;
+}
+
+message Request {}
+
+message Response {
+  bool created = 1;
+  Item item = 2;
+  repeated Item items = 3;
+}
