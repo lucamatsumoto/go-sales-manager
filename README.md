@@ -15,12 +15,13 @@ This is an application that I wrote to practice writing cloud native application
 
 • Protoc
 
-• Docker
+• Docker/Docker-Compose
 
 • Kubernetes
 
 • Jenkins
 
+• JWT Authorization
 
 ## Why Go? 
 
