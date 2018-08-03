@@ -104,6 +104,13 @@ Because these popular third-party services lose the use of protobuf for somethin
 
 Go-micro also has rich support for other queue and pub-sub technologies such as kafka, rabbitmq, sidecar, and nats. All you ahve to do is simply change the environment variable `MICRO_BROKER` to something else and change the import in `main.go`.
 
+
+## Architecture
+
+![alt text](https://drive.google.com/open?id=1L4i-HF0pp-kRBxAJDxR4xDOGosaRoqr6)
+
+
+Client -> API Gateway with GraphQL -> gRPC microservices
 ## Microservices to think about
 
 1) user microservice 
