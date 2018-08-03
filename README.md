@@ -107,7 +107,7 @@ Go-micro also has rich support for other queue and pub-sub technologies such as 
 
 ## Architecture
 
-![alt text](https://drive.google.com/open?id=1L4i-HF0pp-kRBxAJDxR4xDOGosaRoqr6)
+![alt text](https://drive.google.com/open?id=1UXyzFQDPYB9UAWt1vZvtqSjTso59mn1E)
 
 
 Client -> API Gateway with GraphQL -> gRPC microservices
