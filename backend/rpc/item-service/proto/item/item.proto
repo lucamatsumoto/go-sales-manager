@@ -16,7 +16,7 @@ message Item {
 }
 
 message GetItemByNameRequest {
-    string name = 1;
+    string id = 1;
 }
 
 message Request {}

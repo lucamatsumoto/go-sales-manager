@@ -36,9 +36,8 @@ func (c *Client) Create(ctx context.Context, name string) (*Item, error) { //als
 	}, nil
 } //might not need to return anything
 
-func (c *Client) Get(ctx context.Context) (*Item, error) {
-	name := "fill"
-	r, err := c.itemService.GetItemsByName(ctx, &pb.GetItemByNameRequest{Name: name}) //put something in here
+func (c *Client) Get(ctx context.Context, id string) (*Item, error) {
+	r, err := c.itemService.GetItemsByName(ctx, &pb.GetItemByNameRequest{Id: id}) //put something in here
 	if err != nil {
 		return nil, err
 	}
