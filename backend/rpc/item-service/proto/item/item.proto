@@ -1,10 +1,11 @@
 syntax = "proto3";
 
-package go.micro.srv.usr;
+package go.micro.srv.item;
 
 service ItemService {
     rpc CreateItem(Item) returns (Response) {}
-    rpc GetItems(Item) returns (Response) {}
+    rpc GetItems(Request) returns (Response) {}
+    rpc GetItemsByName(GetItemByNameRequest) returns (Response) {}
 }
 
 message Item {
@@ -12,6 +13,10 @@ message Item {
     string name = 2;
     string owner = 3;
     string category = 4;
+}
+
+message GetItemByNameRequest {
+    string name = 1;
 }
 
 message Request {}

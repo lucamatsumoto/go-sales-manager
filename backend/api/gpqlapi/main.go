@@ -1,17 +1,17 @@
 package main
 
 import (
-	pb "github.com/lucamatsumoto/go-sales-manager/backend/rpc/user-service/proto/user"
-	microclient "github.com/micro/go-micro/client"
+	"log"
+	"net/http"
+
+	"github.com/99designs/gqlgen/handler"
+	"github.com/lucamatsumoto/go-sales-manager/backend/api/gpqlapi/server"
 )
 
 func main() {
-	pb.NewUserServiceClient("go.micro.srv.user", microclient.DefaultClient)
-
-	//schema := graphql.
-	//gql.NewRouter()
-
-	/*srv := &http.Server{
-		Addr: ":8080",
-	}*/ // the graphql server that we are hosting on
+	serv, err := server.NewGraphQLServer()
+	if err != nil {
+		log.Fatal(err)
+	}
+	http.Handle("/graphql", handler.GraphQL())
 }

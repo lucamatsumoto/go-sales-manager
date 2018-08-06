@@ -1,0 +1,14 @@
+scalar Time
+
+type User {
+    id: String!
+    name: String!
+    email: String!
+}
+
+type Item {
+    id: String!
+    name: String!
+    owner: String!
+    category: String!   
+}
