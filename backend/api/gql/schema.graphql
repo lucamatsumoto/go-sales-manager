@@ -12,3 +12,12 @@ type Item {
     owner: String!
     category: String!   
 }
+
+type Mutation {
+    createAccount(user: User!): User
+    createItem(item: Item!): Item
+}
+
+type Query {
+    
+}
