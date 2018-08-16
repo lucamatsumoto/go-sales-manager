@@ -2,6 +2,7 @@
 
 This is an application that I wrote to practice writing cloud native applications using the microservices architecture and gRPC. Using the UCLA Free and for Sale page as inspiration, this application allows users to register products for sale and pickup. In the future, I will create a REST implementation of this application as well. 
 
+This project is still a work in progress.
 
 # Technologies
 
